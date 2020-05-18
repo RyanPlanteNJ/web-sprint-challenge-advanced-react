@@ -29,14 +29,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+    Create the class and extend it to the class component. Once you ahve done that, you need to bring in the contructor passing in props and add the super and then the state. Add your key value pairs in the state, then pass the render and return, which is what you will show on the screen.
+
 
 2. Describe the different phases of the component lifecycle.
+Mounting, Updating, and Unmounting. 
+
+Mounting is when the component prepares everything required such as state and renders for the first time. Methods available during this lifecycle are: componentWillMount and componentDidMount.
+
+Updating is when a change has been made to the state which re-renders the component. Some methods available during this lifecycle are: shouldComponentUpdate (deprecated), componentWillUpdate, and componentWillUpdate.
+
+Unmounting is when the component gets removed from the DOM. A method available for this phase of the lifecycle is componentWillUnmount.
 
 3. Demonstrate an understanding of class component lifecycle methods.
+The Component's lifescycle method is the death and birth of the component. It is first rendered, finds any changes and updates them, and then it stays idle til it finds any other changes that need to occur. It is the Birth, Growth, and Death of the component.
 
 4. Define stateful logic.
+A reusable piece of code that you can use throughout the app that changes state (ie custom hook)
 
 5. Describe how to test a React component with React Testing Library.
+Using the Arrange, Act, Assert method. We "arrange" out piece of code so that it can actually be tested, we "act" by calling a method or function that returns a specific result in our code, and assert by saying "this is what i expected the result to be when the test ran".
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
